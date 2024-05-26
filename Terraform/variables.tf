@@ -4,5 +4,6 @@ variable "python_code_location" {
 }
 variable "static_website_bucket_name" {
   type    = string
-  default = "my-tf-hypha-ritchie-bucket"
+  default = "my-tf-hypha-shanmukha-bucket"
+  
 }

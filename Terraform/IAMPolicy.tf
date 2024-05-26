@@ -79,7 +79,7 @@ resource "aws_iam_policy" "policy_for_EC2" {
         "Sid": "AllowObjectDownload",
         "Effect": "Allow",
         "Action": "s3:GetObject"
-        "Resource": "arn:aws:s3:::my-tf-hypha-ritchie-bucket/frontend/*" 
+        "Resource": "arn:aws:s3:::my-tf-hypha-shanmukha-bucket/frontend/*" 
       },
       {
         "Effect" : "Allow",
@@ -191,8 +191,8 @@ resource "aws_iam_policy" "Policy_for_codeDeploy" {
           "s3:GetBucketLocation"
         ],
         "Resource" : [
-          "arn:aws:s3:::arn:aws:s3:::my-tf-hypha-ritchie-bucket",
-          "arn:aws:s3:::arn:aws:s3:::my-tf-hypha-ritchie-bucket/*"
+          "arn:aws:s3:::arn:aws:s3:::my-tf-hypha-shanmukha-bucket",
+          "arn:aws:s3:::arn:aws:s3:::my-tf-hypha-shanmukha-bucket/*"
         ]
       },
       {

@@ -1,6 +1,6 @@
 # #!/bin/bash
 
-# sudo wget -O /var/www/html/app.js https://raw.githubusercontent.com/fredritchie/3-tier-CICD/main/frontend/app.js
+# sudo wget -O /var/www/html/app.js https://raw.githubusercontent.com/fredshanmukha/3-tier-CICD/main/frontend/app.js
 
 # npm install express
 # npm install aws-sdk 
@@ -18,10 +18,10 @@ sudo apt-get update
 sudo apt-get install -y unzip awscli
 
 # Download and extract files from S3
-sudo aws s3 cp s3://my-tf-hypha-ritchie-bucket/frontend/app.js /var/www/html/
-sudo aws s3 cp s3://my-tf-hypha-ritchie-bucket/frontend/package.json /var/www/html/
-sudo aws s3 cp s3://my-tf-hypha-ritchie-bucket/frontend/package-lock.json /var/www/html/
-sudo aws s3 cp --recursive s3://my-tf-hypha-ritchie-bucket/frontend/node_modules /var/www/html/node_modules
+sudo aws s3 cp s3://my-tf-hypha-shanmukha-bucket/frontend/app.js /var/www/html/
+sudo aws s3 cp s3://my-tf-hypha-shanmukha-bucket/frontend/package.json /var/www/html/
+sudo aws s3 cp s3://my-tf-hypha-shanmukha-bucket/frontend/package-lock.json /var/www/html/
+sudo aws s3 cp --recursive s3://my-tf-hypha-shanmukha-bucket/frontend/node_modules /var/www/html/node_modules
 
 # Navigate to the frontend directory (where package.json is located)
 cd /var/www/html
