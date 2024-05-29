@@ -3,6 +3,11 @@
 name: Backend CICD
 
 on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment'
+        required: true
   push:
     branches: [ "main" ]  # Or your deployment branch
     paths:
