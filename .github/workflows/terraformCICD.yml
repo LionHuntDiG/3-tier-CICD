@@ -3,6 +3,11 @@
 name: Terraform CI/CD
 
 on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment'
+        required: true
   push:
     branches:
       - main  # Or your desired deployment branch
