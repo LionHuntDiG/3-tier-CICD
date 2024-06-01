@@ -46,4 +46,4 @@ resource "aws_s3_bucket_website_configuration" "static_website_bucket" {
     suffix = "index.html"
   }
 }
-# dummy commit, all ready to go, creating infra
+# dummy commit all good here, ready to create infra
